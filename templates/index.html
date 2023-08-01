@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% block title %}
+<div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Дорогие гости!</h1>
+            <p class="lead">Один день в этом году будет для нас особенным, и мы хотим провести его в кругу близких и
+                друзей. С большим удовольствием приглашаем вас на знаменательный праздник — нашу свадьбу!</p>
+            <h3 class="fs-2 text-body-emphasis">15 июля 2023</h3>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                <a type="button" class="btn btn-dark btn-lg px-4 me-md-2 fw-bold" href="#floatingInput">К
+                    приглашению</a>
+            </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+            <img class="rounded-lg-3" src="../static/para.png" alt="" width="370">
+        </div>
+    </div>
+</div>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">Программа дня</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+            <img src="../static/ghost.svg" width="50" height="50">
+            <div>
+                <h3 class="fs-2 text-body-emphasis">15:30</h3>
+                <h5 class="fs-2 text-body-emphasis">Сбор гостей</h5>
+                <p>Просим взять с собой хорошее настроение и свои улыбки</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <img src="../static/ceremony.svg" width="50" height="50">
+            <div>
+                <h3 class="fs-2 text-body-emphasis">16:00</h3>
+                <h5 class="fs-2 text-body-emphasis">Торжественная церемония</h5>
+                <p>На всякий случай приготовьте носовые платочки для трогательного момента</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <img src="../static/dinner.svg" width="50" height="50">
+            <div>
+                <h3 class="fs-2 text-body-emphasis">17:00</h3>
+                <h5 class="fs-2 text-body-emphasis">Начало праздничного ужина</h5>
+                <p>Время вкусной еды, танцев и развлечений</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom"></h2></div>
+<div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">Место проведения</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Свою свадьбу мы решили отметить в летнем павильоне ресторана «LES» по адресу:
+            г. Воронеж, Московский проспект, д. 155 "Г".</p>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+            <img src="../static/les.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="350"
+                 loading="lazy">
+        </div>
+    </div>
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9572a94b1c72c7c5bca8a0cae08b3d3a9139ea02ccc85e7755bd90218c2f7b27&amp;source=constructor"
+                        width="600" height="400" frameborder="0"></iframe>
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold text-body-emphasis">Как добраться?</h1>
+                <p class="lead">Мы подготовили для вас карту, чтобы вы точно добрались и
+                    порадовали нас своим присутствием.</p>
+                <a type="button" class="btn btn-dark btn-lg px-4 me-md-2 fw-bold" target="_blank"
+                       href="https://yandex.ru/maps/org/hookah_place_les/210499698300/?ll=39.182961%2C51.745474&mode=search&sctx=ZAAAAAgBEAAaKAoSCVKdDmQ9z0JAERTrVPme30tAEhIJnuxmRj8a7j8RyXa%2Bnxov2T8iBgABAgMEBSgKOABAAUgBYiljb2xsZWN0aW9uc19yYW5raW5nX21vZGVsPWNvbGxfcmVsX2Fzc2Vzc2IlY29sbGVjdGlvbnNfcmVsZXZfdGhyZXNob2xkPTEwMDYwMDAwMGIgY29sbGVjdGlvbnNfcmV0dXJuX2J5X2dlb2lkPXRydWViOXJlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vQ29sbGVjdGlvbnMvTWl4RWFjaE5Qb3NpdGlvbj0xMDAwMGI3cmVhcnI9c2NoZW1lX0xvY2FsL0dlby9Db2xsZWN0aW9ucy9GaXJzdFBvc2l0aW9uVG9NaXg9M2IycmVhcnI9c2NoZW1lX0xvY2FsL0dlby9Db2xsZWN0aW9ucy9FbmFibGVkTWl4PXRydWVqAnJ1nQHNzEw9oAEAqAEAvQHBWaIhwgEG%2FPyJlpAG6gEA8gEA%2BAEAggIfaG9va2FoIHBsYWNlIGxlcyDQstC%2B0YDQvtC90LXQtooCAJICAzE5M5oCDGRlc2t0b3AtbWFwcw%3D%3D&sll=39.182961%2C51.745474&sspn=0.235176%2C0.108265&text=hookah%20place%20les%20%D0%B2%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6&z=12">Проложить
+                        маршрут</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Подтвердите, пожалуйста, свое присутствие на
+                    торжестве!</h1>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+                <form method="post" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <div class="form-floating mb-3">
+                        <input type="text" name="name" class="form-control" id="floatingInput" placeholder="Фамилия Имя">
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="number" class="form-control" id="floatingPassword" placeholder="Контактный телефон">
+                    </div>
+                    <div class="checkbox mb-3">
+                        <label>
+                            <fieldset class="mb-3">
+                                <legend>Присутствие</legend>
+                                <div class="form-check">
+                                    <input type="radio" name="radio_0" class="form-check-input" id="exampleRadio1">
+                                    <label class="form-check-label" for="exampleRadio1">Я буду не один/одна</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="radio_1" class="form-check-input" id="exampleRadio2">
+                                    <label class="form-check-label" for="exampleRadio2">Я буду один/одна</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="radio_2" class="form-check-input" id="exampleRadio3">
+                                    <label class="form-check-label" for="exampleRadio3">Я не смогу прийти</label>
+                                </div>
+                            </fieldset>
+                        </label>
+                    </div>
+                    <input class="w-100 btn btn-lg btn-dark" type="submit" value="Отправить данные">
+                    <hr class="my-4">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="px-4 pt-5 my-5 text-center border-bottom">
+
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Любые вопросы касательно нашего свадебного дня (план дня, особые пожелания) вы можете задавать нам по номерам телефона:</p>
+        <p class="lead mb-4">Сергей: <a href="tel:+79005152223" style="color: rgb(17, 110, 217);">+7 900 515-22-23</a></p>
+        <p class="lead mb-4">Татьяна: <a href="tel:+79525486044" style="color: rgb(17, 110, 217);">+7 952 548-60-44</a></p>
+        <h1 class="display-4 fw-bold text-body-emphasis">МЫ БУДЕМ СЧАСТЛИВЫ ВИДЕТЬ ВАС!</h1>
+    </div>
+    </div>
+{% endblock %}
