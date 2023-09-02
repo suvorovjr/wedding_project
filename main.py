@@ -2,8 +2,8 @@ from flask import Flask, render_template, request
 from requests import request
 from utils import radio, get_index
 
-TOKEN = "6173435069:AAEw84qHT0KRrrDVSRNwk93Q9PgyUqTtXHA"
-CHAT_ID = 250765796
+TOKEN = "6*********gyUqTtXHA"
+CHAT_ID = 2******96
 
 app = Flask(__name__)
 
